@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/canvas.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/shape.js"></script>
+    <script src="js/canvas.js"></script>
+    <title>涂鸦板</title>
+</head>
+<body>
+<div class="container">
+    <ul class="menu">
+        <li class="parent hasson">
+            <div>文件</div>
+            <ul class="son file">
+                <li>新建</li>
+                <li>返回</li>
+                <li>保存</li>
+            </ul>
+        </li>
+        <li class="parent">
+            <div title="线条的颜色" class="lineColor"><input type="color"></div>
+        </li>
+        <li class="parent">
+            <div title="填充的颜色" class="fillColor"><input type="color"></div>
+        </li>
+        <li class="parent hasson shapes">
+            <div>形状</div>
+            <ul class="son shapes">
+                <li data-role="line">线</li>
+                <li data-role="rect">矩形</li>
+                <li data-role="circle">圆</li>
+                <li data-role="pen">铅笔</li>
+                <li data-role="five">五角星</li>
+            </ul>
+        </li>
+        <li class="parent hasson">
+            <div>类型</div>
+            <ul class="son type">
+                <li data-role="stroke">画线</li>
+                <li data-role="fill">填充</li>
+            </ul>
+        </li>
+        <li class="parent hasson">
+            <div>粗细</div>
+            <ul class="son lineWidth">
+                <li data-role="1">细</li>
+                <li data-role="4">中</li>
+                <li data-role="8">粗</li>
+            </ul>
+        </li>
+        <li class="parent hasson">
+            <div>橡皮</div>
+            <ul class="son xpsize">
+                <li data-role="10">小</li>
+                <li data-role="20">中</li>
+                <li data-role="40">大</li>
+            </ul>
+        </li>
+        <li class="parent">
+            <div class="select">选择</div>
+        </li>
+    </ul>
+    <div class="box">
+        <div class="copy"></div>
+        <canvas></canvas>
+        <div class="xp"></div>
+        <div class="selectarea"></div>
+    </div>
+</div>
+</body>
+</html>

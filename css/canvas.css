@@ -1,0 +1,68 @@
+body{
+    margin:0;padding:0;
+}
+ul,li{
+     padding:0;margin:0;list-style: none;
+ }
+.container{
+    width:100%;height:100%;overflow: hidden;
+}
+.menu{
+    width:100%;height:50px;
+    text-align: center;  line-height: 50px;
+    background:#29263B;
+    position: relative;  z-index:2;
+    cursor: pointer;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: url("../images/menu.jpg") repeat-x;
+}
+.menu .parent{
+    width:12.5%;height:100%;
+    float:left;
+}
+.menu .parent div{
+    width:100%;height:100%;
+}
+.menu .parent .son{
+    width:100%;
+}
+.box{
+    width:100%;height:600px;
+    position: relative;
+    background: url("../images/canvas.jpg");
+    border:10px;
+    background-size: cover;
+}
+.box .copy{
+    position: absolute;left:0;top:0;z-index:1;
+    width:100%;height:100%;
+}
+.box canvas{
+    position: absolute;left:0;top:0;
+    /*background:#f7e1b5;*/
+}
+.son{
+    display:none;
+    background:rgba(152, 139, 252, 0.32);
+}
+.son li{
+    background:rgba(251, 232, 51, 0.3);
+    transition: all 2s ease;
+}
+.son li:hover{
+    background: #999;
+}
+.xp{
+    width:10px;height:10px;border:1px solid #ccc;
+    position: absolute;left:0;top:0;
+    display: none;
+    background: #fff;border-radius: 50%;
+}
+.selectarea{
+    border:1px dotted #fff;  
+    position: absolute;  left:0;top:0;
+    display:none;
+}
+
+
