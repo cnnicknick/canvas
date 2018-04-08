@@ -61,7 +61,7 @@ $(function(){
         var index=$(this).index(".file li");
         if(index==0){
             if(obj.history.length>0){
-                var yes=window.confirm("要保存吗?");
+                var yes=window.confirm("确定要保存吗?");
                 if(yes){
                     location.href=(canvas[0].toDataURL().replace("data:image/png","data:stream/octet"));
                 }
